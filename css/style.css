@@ -1,0 +1,80 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  background-color: #5999DF;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  background-color: #5999DF;
+  filter: brightness(1.1);
+  box-shadow: 0 0 4rem 0.3rem rgba(0, 0, 0, 0.8);
+  width: 80%;
+  height: 95vh;
+  border-radius: 5rem;
+  margin: auto;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.weather__header {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: max-content;
+  margin: auto;
+  margin-top: 2rem;
+}
+.weather__input {
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 2rem;
+  outline: none;
+  transition: ease-out 0.2s;
+}
+.weather__input::placeholder {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #06283D;
+  text-transform: capitalize;
+  transition: all 0.3s;
+}
+.weather__input:focus::placeholder {
+  color: transparent;
+  transition: all 0.3s;
+}
+.weather button {
+  cursor: pointer;
+  outline: none;
+  width: 5rem;
+  height: 5rem;
+  background-color: #dff6ff;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+.weather button:hover {
+  transition: all 0.2s;
+  filter: brightness(0.7);
+}
+.weather__body {
+  background-color: red;
+  width: 80vh;
+  margin: auto;
+  height: 80vh;
+}
+
+/*# sourceMappingURL=style.css.map */

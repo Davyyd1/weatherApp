@@ -1,0 +1,23 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+$color-primary: #5999DF;
+$color-blue-dark: #06283D;
+$color-blue-light: #dff6ff;
+
+html {
+    font-size: 62.5%; // 1 rem = 10px
+
+}
+
+.container {
+    background-color: $color-primary;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    
+}
