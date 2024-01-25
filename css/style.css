@@ -30,6 +30,7 @@ html {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+  height: 95vh;
 }
 .weather__header {
   background-color: #fff;
@@ -74,7 +75,19 @@ html {
   background-color: red;
   width: 80vh;
   margin: auto;
-  height: 80vh;
+  height: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+}
+.weather__body p {
+  padding: 2rem;
+}
+.weather__body--top {
+  background-color: #fff;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  height: 25%;
 }
 
 /*# sourceMappingURL=style.css.map */
