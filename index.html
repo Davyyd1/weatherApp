@@ -16,26 +16,61 @@
       defer
     ></script>
   </head>
-  <body class="container">
-    <div class="wrapper">
-      <div class="weather">
-        <div class="weather__header">
-          <i class="fa-solid fa-location-dot"></i>
-          <input
-            type="text"
-            id="input"
-            class="weather__input"
-            placeholder="Enter your location"
-          />
-          <button class="fa-solid fa-magnifying-glass"></button>
-        </div>
-        <div class="weather__body">
-          <div class="weather__body--top">
-            paragraf aici cu date despre localizare(oras), vreme pe scurt,
-            iconita meteo
+  <body>
+    <div class="weather">
+      <h3 class="weather__app-brand">weatherY</h3>
+      <div class="weather__app">
+        <div class="weather__app-tempDetail">
+          <h1 class="temp">20&deg;C</h1>
+          <div class="weather__app-city-time">
+            <h1 class="weather__app-city-time-name">Dubai</h1>
+            <small>
+              <span class="weather__app-time">06:09 Monday Sep 19</span>
+            </small>
           </div>
-          <p>Aici adaug detalii despre vreme</p>
+          <div class="weather__app-condition">
+            <img
+              src=""
+              alt="Weather Condition"
+              width="50"
+              height="50"
+              class="weather__app-icon"
+            />
+            <span class="weather__app-condition-text">Cloudy</span>
+          </div>
         </div>
+      </div>
+      <div class="weather__app-panel">
+        <input
+          type="text"
+          class="weather__app-panel_input"
+          placeholder="Search location..."
+        />
+        <button class="weather__app-panel_button">
+          <i class="fas fa-search"></i>
+        </button>
+        <ul class="weather__app-panel_cities">
+          <li class="weather__app-city">New Yorg</li>
+          <li class="weather__app-city">California</li>
+          <li class="weather__app-city">Paris</li>
+          <li class="weather__app-city">Tokyo</li>
+        </ul>
+
+        <ul class="weather__app-panel_cities-details">
+          <h4 class="weather__app-panel_header">Weather details</h4>
+          <li class="weather__app-panel_details">
+            <span>Cloudy</span>
+            <span>89%</span>
+          </li>
+          <li class="weather__app-panel_details">
+            <span>Humidity</span>
+            <span>63%</span>
+          </li>
+          <li class="weather__app-panel_details">
+            <span>Wind</span>
+            <span>8km/h</span>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
