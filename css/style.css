@@ -149,7 +149,6 @@ body {
 @media only screen and (max-width: 50em) {
   .weather__app-panel, .weather__app {
     position: relative;
-    border: 2px solid red;
     width: 100%;
     top: initial;
   }
