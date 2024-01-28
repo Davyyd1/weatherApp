@@ -1,0 +1,93 @@
+.weather__app{
+    
+    &-panel{
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: $panel-background;
+        box-shadow: 0 8px 32px 0 rgba(0,0,0,0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid $panel-border;
+        z-index: 1;
+        padding: 4rem 3rem;
+        overflow-y: scroll;
+        // text-decoration: none;
+
+        input{
+            margin-bottom: 3rem;
+        }
+
+        &_button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 2rem;
+            margin: 0;
+            border: none;
+            outline: none;
+            background: #fa6d1b;
+            color: $color-white;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: 0.4s;
+        }
+
+        &_button:hover{
+            background: $color-white;
+            color: #000;
+        }
+    }
+
+    &-panel_input{
+        background: none;
+        border: none;
+        border-bottom: 1px $color-gray solid;
+        padding: 0 1.5rem 0.8rem 0;
+        width: 80%;
+        color: $color-white;
+        font-size: 1.5rem;
+    }
+
+    &-panel_input:focus{
+        outline: none;
+    }
+
+    &-panel_input::placeholder{
+        color: $color-gray;
+    }
+
+    &-panel ul{
+        padding: 0 0 1.5rem 0;
+        margin: 2.5rem 0;
+        border-bottom: 1px $color-gray solid;
+        list-style-type: none;
+    }
+
+    &-panel ul li {
+        color: $color-gray;
+        margin: 3.5rem 0;
+        
+    }
+
+    &-panel_header{
+        margin: 5rem 0;
+    }
+
+    &-city{
+        display: block;
+        cursor: pointer;
+    }
+
+    &-city:hover{ 
+        color: $color-white;
+    }
+
+    &-panel_details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

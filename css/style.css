@@ -22,6 +22,7 @@ body {
   font-family: "Rubik", sans-serif;
   transition: 500ms;
   opacity: 1;
+  position: relative;
 }
 
 .weather::before {
@@ -36,7 +37,113 @@ body {
 }
 
 .weather__app {
-  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2rem 3rem 4rem 5rem;
+}
+.weather__app-tempDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather__app-temp, .weather__app-city-time {
+  margin: 0 3rem;
+}
+.weather__app-city-time-name {
+  margin: 0;
+  margin-bottom: 0.4rem;
+  font-size: 6rem;
+}
+.weather__app-temp {
+  font-size: 8rem;
+  margin: 0;
+}
+.weather__app-condition img {
+  display: block;
+  margin: 1.1rem 0;
+}
+
+.weather__app-panel {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: rgba(110, 110, 110, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 1;
+  padding: 4rem 3rem;
+  overflow-y: scroll;
+}
+.weather__app-panel input {
+  margin-bottom: 3rem;
+}
+.weather__app-panel_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2rem;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: #fa6d1b;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.4s;
+}
+.weather__app-panel_button:hover {
+  background: #fff;
+  color: #000;
+}
+.weather__app-panel_input {
+  background: none;
+  border: none;
+  border-bottom: 1px #ccc solid;
+  padding: 0 1.5rem 0.8rem 0;
+  width: 80%;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.weather__app-panel_input:focus {
+  outline: none;
+}
+.weather__app-panel_input::placeholder {
+  color: #ccc;
+}
+.weather__app-panel ul {
+  padding: 0 0 1.5rem 0;
+  margin: 2.5rem 0;
+  border-bottom: 1px #ccc solid;
+  list-style-type: none;
+}
+.weather__app-panel ul li {
+  color: #ccc;
+  margin: 3.5rem 0;
+}
+.weather__app-panel_header {
+  margin: 5rem 0;
+}
+.weather__app-city {
+  display: block;
+  cursor: pointer;
+}
+.weather__app-city:hover {
+  color: #fff;
+}
+.weather__app-panel_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

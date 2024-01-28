@@ -9,6 +9,7 @@
     font-family: 'Rubik', sans-serif;
     transition: 500ms;
     opacity: 1;    
+    position: relative;
 }
 
 .weather::before {
@@ -23,5 +24,40 @@
 }
 
 .weather__app {
-    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    // flex-direction: column;
+    padding: 2rem 3rem 4rem 5rem;
+
+    &-tempDetail{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-temp, &-city-time {
+        margin: 0 3rem;
+    }
+
+    &-city-time-name {
+        margin: 0;
+        margin-bottom: 0.4rem;
+        font-size: 6rem;
+    }
+
+    &-temp {
+        font-size: 8rem;
+        margin: 0;
+    }
+
+    &-condition img{
+        display: block;
+        margin: 1.1rem 0;
+    }
 }
