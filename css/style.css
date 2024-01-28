@@ -13,7 +13,7 @@ body {
 
 .weather {
   min-height: 100vh;
-  background-image: url("../img/sunny.jpg");
+  background-image: url("../img/day/sunny.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
