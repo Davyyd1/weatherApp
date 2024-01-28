@@ -10,6 +10,8 @@
     transition: 500ms;
     opacity: 1;    
     position: relative;
+
+    
 }
 
 .weather::before {
@@ -44,6 +46,8 @@
     &-temp, &-city-time {
         margin: 0 3rem;
     }
+
+   
 
     &-city-time-name {
         margin: 0;

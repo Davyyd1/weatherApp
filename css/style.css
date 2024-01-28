@@ -146,4 +146,30 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width: 50em) {
+  .weather__app-panel, .weather__app {
+    position: relative;
+    border: 2px solid red;
+    width: 100%;
+    top: initial;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  html {
+    font-size: 43.75%;
+  }
+  .weather__app-panel {
+    height: 90vh;
+    overflow: none;
+  }
+  .weather__app-city-time {
+    margin: 0 3rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 31.25%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
