@@ -97,4 +97,12 @@ const changeWallpaperByWeather = function (xy) {
       xy.current.is_day == 1 ? "day" : "night"
     }/cloudy.jpg)`;
   }
+  if (
+    xy.current.condition.text.toLowerCase().includes("overcast") ||
+    xy.current.condition.text.toLowerCase().includes("mist")
+  ) {
+    weather.style.backgroundImage = `url(img/${
+      xy.current.is_day == 1 ? "day" : "night"
+    }/overcast.jpg)`;
+  }
 };
